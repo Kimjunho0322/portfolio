@@ -1,0 +1,148 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Montserrat;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: inherit;
+}
+
+img{
+    vertical-align: top;
+}
+.con{
+    height: 100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    color: #f9f9f9;
+}
+
+html{scroll-behavior: smooth;}
+
+.con h2{
+    font-size: 30px;
+}
+header{
+    background: #19191c;
+    padding: 20px 30px;
+    color: #f9f9f9;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    top: 60px;
+    width: 90%;
+    z-index: 10;
+    left: 50%;
+    transform: translate(-50%);
+}
+header nav ul{
+    display: flex;
+}
+
+div h2 a{
+    width: 90%;
+}
+
+header nav ul li{margin-left: 50px; font-weight: bold;}
+
+#pro1{
+    background-color: yellow;
+    background-attachment: fixed;
+}
+#pro2{
+    background: url(source/street-7971714_1280.jpg) center/cover;
+    background-attachment: fixed;
+}
+#pro3{
+    background: url(source/street-7971714_1280.jpg) center/cover;
+    background-attachment: fixed;
+}
+#about{
+    position: relative;
+    overflow: hidden;
+}
+#about h2{
+    font-size: 80px;
+    position: relative;
+}
+.underline1:before, .underline2:before, .underline3:before {
+    content: '';
+    position: absolute;
+    width: 50px;
+    height: 8px;
+    background: #fff;
+    opacity: 0;
+    animation: ani1 0.5s linear 0.3s both;
+}
+
+.underline1:before {
+    left: 60.5%;
+    top: 25px;
+    transform: translateX(-12px);
+}
+
+.underline2:before {
+    left: 60.5%;
+    top: 41px;
+    transform: translateX(-12px);
+}
+
+.underline3:before {
+    left: 60.5%;
+    top: 57px;
+    transform: translateX(-12px);
+}
+
+.underline4:before {
+    content: '';
+    position: absolute;
+    width: 8px;
+    background: #fff;
+    opacity: 0;
+    animation: ani2 0.5s linear 0.3s both;
+    left: 60.5%;
+    top: 30px;
+    transform: translateX(-12px);
+}
+
+#about video{
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+.underline {
+    position: relative;
+    top: 0.26em;
+}
+
+@keyframes ani1{
+    0%{
+        width: 0px; opacity: 0;
+    }
+    100%{
+        width: 55px; opacity: 1;
+    }
+}
+
+@keyframes ani2{
+    0%{
+        height: 0px; opacity: 0;
+    }
+    100%{
+        height: 35px; opacity: 1;
+    }
+}
