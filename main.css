@@ -2,15 +2,22 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    font-family: Montserrat;
+    
 }
 
 body {
+    font-family: 'TTWanjudaedunsancheB', sans-serif;
     background: #000;
     padding: 2rem;
-    background: #000;
     padding: 0;
-  }
+}
+
+footer {
+    background-color: white;
+    height: 50px;
+    text-align: center;
+    font-size: 40px;
+}
 
 #main h2 {
     font-family: 'Arial';
@@ -26,25 +33,25 @@ span{
 span:not(.light) {
     opacity: 0;
     animation: flashText .5s ease-out alternate infinite;
-  }
-  
-  span.light {
+}
+
+span.light {
     position: relative;
     display: inline-block;
     
     &:before {
-      position: absolute;
-      left: 0;
-      top: -10%;
-      width: 100%;
-      height: 120%;
-      background: #fff;
-      filter: blur(10px);
-      content: "";
-      opacity: 0;
-      animation: flash .5s ease-out alternate infinite;
+    position: absolute;
+    left: 0;
+    top: -10%;
+    width: 100%;
+    height: 120%;
+    background: #fff;
+    filter: blur(10px);
+    content: "";
+    opacity: 0;
+    animation: flash .5s ease-out alternate infinite;
     }
-  }
+}
 
 li{
     list-style: none;
@@ -113,7 +120,6 @@ header nav ul li{margin-left: 50px; font-weight: bold;}
     justify-content: center;
 }
 #about h2{
-    text-decoration-line: underline;
     color: white;
     font-size: 70px;
     padding-right: 50px;
@@ -125,6 +131,11 @@ header nav ul li{margin-left: 50px; font-weight: bold;}
     height: 100vh;
     font-size: 30px;
     background-attachment: fixed;
+    transition: transform 0.3s ease;
+}
+
+#about.detail:hover {
+    transform: scale(1.2);
 }
 
 .info-text {
@@ -169,12 +180,16 @@ header nav ul li{margin-left: 50px; font-weight: bold;}
 #skill{
     background-color: white;
     background-attachment: fixed;
+    height: 1000px;
+    background-color: #000;
 }
 
-#skill h2{
+#skill h2, #project h2{
+    padding-top: 150px;
     align-items: flex-start;
     text-align: center;
     font-size: 70px;
+    color: white;
 }
 
 .image-container {
@@ -183,24 +198,82 @@ header nav ul li{margin-left: 50px; font-weight: bold;}
     justify-content: center;
 }
 .image-container img {
-    margin: 80px;
+    margin: 50px;
+    transition: transform 0.3s ease;
 }
 
-#pro3{
-    background: url(source/street-7971714_1280.jpg) center/cover;
+.image-container img:hover {
+    transform: rotate(360deg);
+}
+
+#project{
     background-attachment: fixed;
+    background-color: black;
+    height: auto;
+    background: linear-gradient(to bottom, #000 0%, #fff 100%);
+}
+
+.project-item {
+    border: 2px solid #000; 
+    background-color: #fff; 
+    padding: 60px;
+    width: 80%;
+    height: auto; 
+    border-radius: 10px; 
+    margin: 20px auto; 
+}
+
+.project-name {
+    text-align: center;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.project-content {
+    display: flex;
+    justify-content: space-between;
+}
+.project-description {
+    flex: 1;
+    margin-right: 20px;
+}
+.project-image {
+    flex: 1;
+}
+
+.image-wrap {
+    width: 260px;
+    height: 260px;
+    border-radius: 50%;
+    overflow: hidden;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 25px;
+}
+
+.image-wrap img {
+    max-width: 100%;
+    height: auto;
 }
 
 
 
 @keyframes flash{
     to {
-      opacity: 1;
+    opacity: 1;
     }
-  }
-  
-  @keyframes flashText {
+}
+
+@keyframes flashText {
     to {
-      opacity: 0.15;
+        opacity: 0.15;
     }
-  }
+}
+@font-face {
+    font-family: 'TTWanjudaedunsancheB';
+    src: url('https://cdn.jsdelivr.net/gh/projectnoonnu/noonfonts_2304-2@1.0/TTWanjudaedunsancheB.woff2') format('woff2');
+    font-weight: 700;
+    font-style: normal;
+}

@@ -8,19 +8,18 @@
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/xeicon@2.3.3/xeicon.min.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100..900&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Black+Han+Sans&family=Noto+Sans+KR:wght@100..900&family=Stylish&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="main.css">
 </head>
 <body>
-    <script src="main.js"></script>
     <div class="wrap">
         <header>
             <h1><i class="xi-spinner-4 xi-spin"></i> KJH's Portfolio</h1>
             <nav>
                 <ul>
-                    <li><a href="#about">ABOUT</a></li>
-                    <li><a href="#skill">SKILL</a></li>
-                    <li><a href="#pro3">project03</a></li>
+                    <li><a href="#about">About</a></li>
+                    <li><a href="#skill">Skills</a></li>
+                    <li><a href="#project">Projects</a></li>
                 </ul>
             </nav>
         </header>
@@ -29,7 +28,7 @@
                 <span>This is</span>  
                 <span>Junho's</span> 
                 <span class="light">portfolio</span>  
-              </h2>
+            </h2>
         </div>
         <div id="about" class="detail">
             <h2><i class="xi-volume-up"></i>ABOUT ME</h2>
@@ -57,20 +56,63 @@
         <div id="skill" class="detail">
             <h2><i class="xi-airplay"></i> SKILL</h2>
             <div class="image-container">
-                <img src="source/html.jpg" height="330px" width="450px">
-                <img src="source/nodejs.png" height="140px" width="200px">
-                <img src="source/python.png" height="200px" width="200px">
-                <img src="source/c++.png" height="200px" width="200px">
-                <img src="source/cn.png" height="200px" width="200px">
-                <img src="source/mysql.png" height="200px" width="200px">
-                <img src="source/unity.png" height="200px" width="200px">
-                <img src="source/bootstrap.png" height="200px" width="200px">
+                <div class="image-wrap">
+                    <img src="source/HTMLCSS.png" height="250px" width="300px">
+                </div>
+                <div class="image-wrap">
+                    <img src="source/nodejs.png" height="170px" width="160px">
+                </div>
+                <div class="image-wrap">
+                    <img src="source/python.png" height="170px" width="170px">
+                </div>
+                <div class="image-wrap">
+                    <img src="source/c++.png" height="195px" width="170px">
+                </div>
+                <div class="image-wrap">
+                    <img src="source/cn.png" height="200px" width="200px">
+                </div>
+                <div class="image-wrap">
+                    <img src="source/mysql.png" height="200px" width="200px">
+                </div>
+                <div class="image-wrap">
+                    <img src="source/unity.png" height="140px" width="230px">
+                </div>
+                <div class="image-wrap">
+                    <img src="source/bootstrap.png" height="140px" width="140px">
+                </div>
             </div>
         </div>
-        
-        <div id="pro3" class="detail">
-            <h2>project03</h2>
+
+        <div id="project" class="detail">
+            <h2><i class="xi-layout-aside-o"></i>Projects</h2>
+            <div class="project-item">
+            <div class="project-name">프로젝트 1 이름</div>
+            <div class="project-content">
+                <div class="project-image">
+                <img src="project1.jpg" alt="프로젝트 1 이미지">
+                </div>
+                <div class="project-description">프로젝트 1 설명...</div>
+            </div>
+            </div>
+            <div class="project-item">
+            <div class="project-name">프로젝트 2 이름</div>
+            <div class="project-content">
+                <div class="project-image">
+                <img src="project2.jpg" alt="프로젝트 2 이미지">
+                </div>
+                <div class="project-description">프로젝트 2 설명...</div>
+            </div>
+            </div>
+            <!-- 프로젝트 추가 -->
         </div>
     </div>
+
+    <footer>
+        <a href="https://github.com/yourusername" target="_blank">
+        <i class="xi-github"></i>
+        </a>
+    </footer>
+
+    <script src="main.js"></script>
 </body>
 </html>
