@@ -225,7 +225,7 @@ header nav ul li{margin-left: 50px; font-weight: bold;}
 
 .project-name {
     text-align: center;
-    font-size: 24px;
+    font-size: 50px;
     font-weight: bold;
 }
 
@@ -236,10 +236,27 @@ header nav ul li{margin-left: 50px; font-weight: bold;}
 .project-description {
     flex: 1;
     margin-right: 20px;
+    font-family: Xeicon;
+    font-size: 20px;
+
 }
 .project-image {
     flex: 1;
+    
 }
+
+.centered-image {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.slider {
+    width: 100%; /* 슬라이드 쇼의 너비 조정 */
+    height: 400px; /* 슬라이드 쇼의 높이 조정 */
+    overflow: hidden; /* 슬라이드의 가시적인 부분 설정 */
+}  
+
 
 .image-wrap {
     width: 260px;

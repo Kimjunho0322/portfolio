@@ -86,33 +86,85 @@
         <div id="project" class="detail">
             <h2><i class="xi-layout-aside-o"></i>Projects</h2>
             <div class="project-item">
-            <div class="project-name">프로젝트 1 이름</div>
+            <div class="project-name">Card Of Faith</div>
             <div class="project-content">
                 <div class="project-image">
-                <img src="project1.jpg" alt="프로젝트 1 이미지">
+                    <div class="slider">
+                    <img src="source/card_of_faith.png" alt="프로젝트 2 이미지">
+                    <img src="image1.jpg" alt="이미지 1">
+                    <img src="image2.jpg" alt="이미지 2">
+                    <img src="image3.jpg" alt="이미지 3">
+                    <!-- 추가 이미지 -->
+                    </div>
                 </div>
-                <div class="project-description">프로젝트 1 설명...</div>
+                <div class="project-description">
+                    <br>
+                    개발 기간: (2021.4.11 ~ 2021.9.11)
+                    <br>
+                    사용 기술: Unity 게임 개발 엔진
+                    <br>
+                    게임 형태: TCG (Trading Card Game) 형식
+                    <br>
+                    <br>
+                    이 프로젝트는 Unity 게임 개발 엔진을 활용하여 처음으로 제작한 TCG 형식의 게임입니다. 첫 프로젝트임에도 불구하고, 
+                    <br>
+                    다양한 개발 과정을 통해 획득한 경험과 지식은 저의 개발 역량을 한 단계 더 발전시키는 계기가 되었습니다.
+                    <br>
+                    이 프로젝트를 통해 저는 
+                    <br>
+                    1. Unity 게임 엔진을 활용한 게임 로직 구현
+                    <br>
+                    2. TCG 게임의 서버와 클라이언트 간 통신 처리 방법
+                    <br>
+                    3. 게임 데이터의 효율적인 관리 및 최적화
+                    <br>
+                    에 대해 좀 더 깊게 이해하였습니다.
+                    <br>
+                    미숙했던 부분들은 저에게 더욱 성장할 수 있는 기회를 제공하였고,
+                    <br>이러한 경험을 바탕으로 다음 프로젝트에서는 더욱 완성도 높은 결과물을 제공할 수 있을 것이라 확신합니다.
+                </div>
             </div>
             </div>
             <div class="project-item">
-            <div class="project-name">프로젝트 2 이름</div>
-            <div class="project-content">
-                <div class="project-image">
-                <img src="project2.jpg" alt="프로젝트 2 이미지">
+                <div class="project-name">프로젝트 2 이름</div>
+                <div class="project-content">
+                    <div class="project-image">
+                    <div class="slider">
+                        <img src="source/unity.png" alt="프로젝트 2 이미지 1">
+                        <img src="source/python.png" alt="프로젝트 2 이미지 2">
+                        <img src="source/project2_image3.jpg" alt="프로젝트 2 이미지 3">
+                        <!-- 추가 이미지 -->
+                    </div>
                 </div>
                 <div class="project-description">프로젝트 2 설명...</div>
+                </div>
             </div>
-            </div>
-            <!-- 프로젝트 추가 -->
-        </div>
-    </div>
 
     <footer>
-        <a href="https://github.com/yourusername" target="_blank">
+        <a href="https://github.com/Kimjunho0322" target="_blank">
         <i class="xi-github"></i>
         </a>
     </footer>
 
-    <script src="main.js"></script>
+    <script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+    var sliders = document.getElementsByClassName("slider");
+    for (var i = 0; i < sliders.length; i++) {
+        var slides = sliders[i].getElementsByTagName("img");
+        for (var j = 0; j < slides.length; j++) {
+            slides[j].style.display = "none";
+        }
+        slideIndex++;
+        if (slideIndex > slides.length) {
+            slideIndex = 1;
+        }
+        slides[slideIndex - 1].style.display = "block";
+    }
+    setTimeout(showSlides, 4000);
+}
+</script>
 </body>
 </html>
